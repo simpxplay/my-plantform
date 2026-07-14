@@ -1,0 +1,16 @@
+{
+  "name": "my-platform",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "web",
+    "mobile"
+  ],
+  "scripts": {
+    "test:backend": "cd backend && php artisan test",
+    "test:web": "cd web && npm run test",
+    "test:mobile": "cd mobile && npx tsc --noEmit",
+    "openapi:export": "cd backend && composer openapi:export",
+    "openapi:generate": "cd packages/api-client && npm run generate"
+  }
+}

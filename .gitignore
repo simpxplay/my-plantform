@@ -13,6 +13,7 @@ build/
 .expo/
 .claude
 .tasks
+.idea
 
 # Laravel
 backend/public/hot

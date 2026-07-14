@@ -1,0 +1,15 @@
+{
+  "name": "@my-platform/api-client",
+  "version": "0.0.1",
+  "description": "Generated TypeScript client from OpenAPI spec",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "generate": "npx openapi-typescript ../../../packages/api-client/openapi.json -o ./src/schema.d.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.0.0",
+    "typescript": "^5.0.0"
+  }
+}
